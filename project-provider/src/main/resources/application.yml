@@ -1,5 +1,5 @@
 server:
-  port: 90091
+  port: 9091
 spring:
   application:
     name: springCloudProjectProvider  # 服务名称
@@ -17,7 +17,7 @@ eureka:
     service-url: # Eureka Server地址
       defaultZone: http://localhost:9080/eureka/  # Eureka Server地址
   instance:
-    instance-id:spring-cloud-fist-provider-8001  # 自定义服务实例名称
+    instance-id: spring-cloud-fist-provider-8001  # 自定义服务实例名称
     prefer-ip-address: true # 是否优先使用IP来作为主机名
 
 # Spring Boot 2.50对 actuator 监控屏蔽了大多数的节点，只暴露了 heath 节点，本段配置（*）就是为了开启所有的节点

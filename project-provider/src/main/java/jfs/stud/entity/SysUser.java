@@ -10,8 +10,7 @@ public class SysUser implements Serializable{
 
     private static final long serialVersionUID = 1L;
     private String id;
-    private String username;
-    private String password;
-    private String salt;
-    private String locked;
+    private String name;
+    private String sex;
+    private String phone;
 }
