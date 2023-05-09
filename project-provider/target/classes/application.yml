@@ -9,13 +9,11 @@ spring:
     username: root
     password: root
 
-
-
 eureka:
   client:
     register-with-eureka: true # 是否将自己注册到Eureka Server，默认为true
     service-url: # Eureka Server地址
-      defaultZone: http://localhost:9080/eureka/  # Eureka Server地址
+      defaultZone: http://eureka9080.com:9080/eureka/,http://eureka9082.com:9082/eureka/,http://eureka9083.com:9083/eureka/  # Eureka Server地址
   instance:
     instance-id: spring-cloud-fist-provider-8001  # 自定义服务实例名称
     prefer-ip-address: true # 是否优先使用IP来作为主机名

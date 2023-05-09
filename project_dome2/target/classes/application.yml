@@ -1,12 +1,12 @@
 server:
-  port: 9080
+  port: 9082
 eureka:
   instance:
-    hostname: eureka9080.com   #eureka服务端的实例名称
+    hostname: eureka9082.com   #eureka服务端的实例名称
 
   client:
     register-with-eureka: false  #是否将自己注册到eureka服务端
     fetch-registry: false  #是否从eureka服务端获取注册信息
     service-url:
       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  #设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
-      defaultZone: http://eureka9082.com:9082/eureka/,http://eureka9083.com:9083/eureka/
+      defaultZone: http://eureka9080.com:9080/eureka/,http://eureka9083.com:9083/eureka/

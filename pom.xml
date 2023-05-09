@@ -12,6 +12,8 @@
         <module>project-common</module>
         <module>project_dome1</module>
         <module>project-provider</module>
+        <module>project_dome2</module>
+        <module>project_dome3</module>
     </modules>
 
     <parent>
