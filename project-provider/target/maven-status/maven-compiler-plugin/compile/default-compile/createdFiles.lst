@@ -1,0 +1,6 @@
+jfs\stud\entity\SysUser.class
+jfs\stud\service\imple\SysUserServiceImple.class
+jfs\stud\controller\SysUserController.class
+jfs\stud\service\ISysUserService.class
+jfs\stud\mapper\SysUserMapper.class
+jfs\stud\ProviderOneApplication.class

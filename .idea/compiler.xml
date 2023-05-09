@@ -9,9 +9,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="project_dome2" />
         <module name="project_dome1" />
-        <module name="admin_dome1" />
         <module name="project_dome3" />
         <module name="project-common" />
+        <module name="project-consumer" />
+        <module name="admin_dome1" />
         <module name="project-provider" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="admin_dome1" options="-parameters" />
       <module name="project-common" options="-parameters" />
+      <module name="project-consumer" options="-parameters" />
       <module name="project-provider" options="-parameters" />
       <module name="project_dome1" options="-parameters" />
       <module name="project_dome2" options="-parameters" />

@@ -14,6 +14,7 @@
         <module>project-provider</module>
         <module>project_dome2</module>
         <module>project_dome3</module>
+        <module>project-consumer</module>
     </modules>
 
     <parent>
