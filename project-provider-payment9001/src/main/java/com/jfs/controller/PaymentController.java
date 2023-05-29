@@ -1,4 +1,4 @@
-package com.jfs;
+package com.jfs.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +17,7 @@ public class PaymentController {
     @Value("${server.port}")
     private String serverPort;
 
-    @GetMapping("/payment/nacos/{id}")
+    @GetMapping("/nacos/{id}")
     public String getPayment(@PathVariable("id") Integer id) {
         return "nacos registry, serverPort: "+ serverPort+"\t id"+id;
     }

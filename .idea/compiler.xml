@@ -7,15 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="project-provider2" />
+        <module name="cloud-api-commons" />
+        <module name="admin_dome1" />
+        <module name="project-provider" />
         <module name="project_dome2" />
         <module name="project_gateway" />
         <module name="project_dome1" />
         <module name="project_dome3" />
-        <module name="project-provider2" />
         <module name="project-common" />
+        <module name="cloudalibaba-consumer-nacos-order83" />
         <module name="project-consumer" />
-        <module name="admin_dome1" />
-        <module name="project-provider" />
+        <module name="project-provider-payment9002" />
         <module name="project-provider-payment9001" />
       </profile>
     </annotationProcessing>
@@ -23,10 +26,13 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="admin_dome1" options="-parameters" />
+      <module name="cloud-api-commons" options="-parameters" />
+      <module name="cloudalibaba-consumer-nacos-order83" options="-parameters" />
       <module name="project-common" options="-parameters" />
       <module name="project-consumer" options="-parameters" />
       <module name="project-provider" options="-parameters" />
       <module name="project-provider-payment9001" options="-parameters" />
+      <module name="project-provider-payment9002" options="-parameters" />
       <module name="project-provider2" options="-parameters" />
       <module name="project_dome1" options="-parameters" />
       <module name="project_dome2" options="-parameters" />
