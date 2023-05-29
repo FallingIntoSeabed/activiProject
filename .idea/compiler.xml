@@ -8,12 +8,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="project_dome2" />
+        <module name="project_gateway" />
         <module name="project_dome1" />
         <module name="project_dome3" />
+        <module name="project-provider2" />
         <module name="project-common" />
         <module name="project-consumer" />
         <module name="admin_dome1" />
         <module name="project-provider" />
+        <module name="project-provider-payment9001" />
       </profile>
     </annotationProcessing>
   </component>
@@ -23,9 +26,12 @@
       <module name="project-common" options="-parameters" />
       <module name="project-consumer" options="-parameters" />
       <module name="project-provider" options="-parameters" />
+      <module name="project-provider-payment9001" options="-parameters" />
+      <module name="project-provider2" options="-parameters" />
       <module name="project_dome1" options="-parameters" />
       <module name="project_dome2" options="-parameters" />
       <module name="project_dome3" options="-parameters" />
+      <module name="project_gateway" options="-parameters" />
       <module name="startproject" options="-parameters" />
     </option>
   </component>
