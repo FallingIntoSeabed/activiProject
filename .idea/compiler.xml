@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloudalibaba-config-nacos-client3377" />
         <module name="project-provider2" />
         <module name="cloud-api-commons" />
         <module name="admin_dome1" />
@@ -27,6 +28,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="admin_dome1" options="-parameters" />
       <module name="cloud-api-commons" options="-parameters" />
+      <module name="cloudalibaba-config-nacos-client3377" options="-parameters" />
       <module name="cloudalibaba-consumer-nacos-order83" options="-parameters" />
       <module name="project-common" options="-parameters" />
       <module name="project-consumer" options="-parameters" />
