@@ -5,6 +5,7 @@ import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import jfs.stu.emtity.CommonResult;
 import jfs.stu.emtity.Payment;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
 import javax.annotation.Resource;
 
 @RestController
+@RequestMapping("/consumer")
 public class CircleBreakerController {
 
     public static final String SERVICE_URL = "http://nacos-payment-provider";
@@ -20,11 +22,14 @@ public class CircleBreakerController {
     @Resource
     private RestTemplate restTemplate;
 
-    @RequestMapping("/consumer/fallback/{id}")
+    @GetMapping("/fallback/{id}")
     //@SentinelResource(value = "fallback") //没有配置
     //@SentinelResource(value = "fallback",fallback = "handlerFallback") //fallback只负责业务异常
     //@SentinelResource(value = "fallback",blockHandler = "blockHandler") //blockHandler只负责sentinel控制台配置违规
-    @SentinelResource(value = "fallback",fallback = "handlerFallback",blockHandler = "blockHandler")
+//    @SentinelResource(value = "fallback",fallback = "handlerFallback",blockHandler = "blockHandler")
+    /*exceptionsToIgnore，忽略指定异常，即这些异常不用兜底方法处理。*/
+    @SentinelResource(value = "fallback",fallback = "handlerFallback",blockHandler = "blockHandler",
+            exceptionsToIgnore = {IllegalArgumentException.class})
     public CommonResult<Payment> fallback(@PathVariable Long id)
     {
         CommonResult<Payment> result = restTemplate.getForObject(SERVICE_URL + "/paymentSQL/"+id,CommonResult.class,id);
